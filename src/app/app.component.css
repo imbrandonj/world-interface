@@ -1,0 +1,23 @@
+header {
+    margin: 2.5% 0 4%;
+}
+
+h1 {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: ghostwhite;
+}
+
+h1 span {
+    color: #d3f9d9;
+    letter-spacing: 0.15rem;
+    font-size: 1.1em;
+}
+
+.inlineRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
