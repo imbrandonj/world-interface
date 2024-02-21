@@ -1,9 +1,9 @@
 img {
-    width: 88%;
+    width: 85%;
 }
 
 .mapContainer {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }

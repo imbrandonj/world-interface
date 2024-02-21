@@ -1,9 +1,17 @@
+.appWrap {
+    margin: 6rem 2rem 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    padding: 5rem 2.5rem;
+}
+
 header {
-    margin: 2.5% 0 4%;
+  margin-bottom: 6rem;
 }
 
 h1 {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     font-weight: 400;
     color: ghostwhite;
@@ -20,4 +28,23 @@ h1 span {
     align-items: center;
     justify-content: center;
     gap: 5rem;
+}
+
+.mapInfoBundle {
+    display: flex;
+    gap: 5rem;
+}
+
+.countryInfo {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 0 1em;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    color: ghostwhite;
+}
+
+.countryInfo h2 {
+    font-weight: 400;
 }
