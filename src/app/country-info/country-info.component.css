@@ -1,7 +1,7 @@
 .countryInfo {
     display: flex;
     flex-direction: column;
-    padding: 0 1em;
+    padding-left: 2em;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     letter-spacing: 0.1rem;
     color: ghostwhite;

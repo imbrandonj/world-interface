@@ -1,5 +1,5 @@
 .appWrap {
-    margin: 5rem 2rem 0;
+    margin: 2% 2rem 0;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
     padding: 5rem 2.5rem;
@@ -35,9 +35,21 @@ h1 span {
     justify-content: space-between;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1%;
+    color: ghostwhite;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+}
+
 @media screen and (min-width: 2200px) {
     .appWrap {
-        margin: 6rem 2rem 0;
         padding: 7rem 2.5rem;
     }
 
