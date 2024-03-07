@@ -2,7 +2,7 @@
     margin: 2% 2rem 0;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
-    padding: 5rem 2.5rem;
+    padding: 3rem 2rem;
 }
 
 header {
@@ -37,23 +37,32 @@ h1 span {
 
 footer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 0.5em;
-    margin-top: 1%;
+    margin-top: 2%;
     color: ghostwhite;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.05em;
+}
+
+footer a {
+    padding: 0 1rem;
+}
+
+footer a:hover {
+    cursor: pointer;
+    transform: scaleX(-1);
 }
 
 @media screen and (min-width: 2200px) {
     .appWrap {
-        padding: 7rem 2.5rem;
+        margin-top: 3%;
+        padding: 3rem;
     }
 
     header {
         margin-bottom: 8rem;
       }
+
+    footer img {
+        height: 4rem;
+    }
 }
