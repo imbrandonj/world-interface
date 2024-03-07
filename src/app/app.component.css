@@ -1,5 +1,5 @@
 .appWrap {
-    margin: 6rem 2rem 0;
+    margin: 5rem 2rem 0;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
     padding: 5rem 2.5rem;
@@ -32,19 +32,16 @@ h1 span {
 
 .mapInfoBundle {
     display: flex;
-    gap: 5rem;
+    justify-content: space-between;
 }
 
-.countryInfo {
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    padding: 0 1em;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    letter-spacing: 0.1rem;
-    color: ghostwhite;
-}
+@media screen and (min-width: 2200px) {
+    .appWrap {
+        margin: 6rem 2rem 0;
+        padding: 7rem 2.5rem;
+    }
 
-.countryInfo h2 {
-    font-weight: 400;
+    header {
+        margin-bottom: 8rem;
+      }
 }

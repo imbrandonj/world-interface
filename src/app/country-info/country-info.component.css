@@ -1,0 +1,12 @@
+.countryInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    color: ghostwhite;
+}
+
+.countryInfo h2 {
+    font-weight: 400;
+}
