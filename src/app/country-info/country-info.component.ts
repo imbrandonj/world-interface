@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { WorldMapComponent } from '../world-map/world-map.component';
 
 @Component({
   selector: 'app-country-info',
   standalone: true,
-  imports: [],
+  imports: [WorldMapComponent],
   templateUrl: './country-info.component.html',
   styleUrl: './country-info.component.css'
 })

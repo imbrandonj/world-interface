@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-world-map',
@@ -9,4 +10,16 @@ import { Component } from '@angular/core';
 })
 export class WorldMapComponent {
 
+  countryInfo: any = {};
+
+  constructor(private apiService: ApiService) {  }
+
+  setCountryData(event: any) {
+    this.apiService.setCountryInfo(event.target.id).subscribe((data: any) => {
+      this.countryInfo = {
+        ...data
+      }
+    });
+  }
+  
 }
