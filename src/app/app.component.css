@@ -32,7 +32,9 @@ h1 span {
 
 .mapInfoBundle {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 footer {
@@ -55,7 +57,7 @@ footer a:hover {
 @media screen and (min-width: 2200px) {
     .appWrap {
         margin-top: 3%;
-        padding: 3rem;
+        padding: 6rem 3rem;
     }
 
     header {

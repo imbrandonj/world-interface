@@ -1,26 +1,16 @@
-.mapContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.svg1 {
-    display: none;
-}
-
-.svg2 {
-    display: block;
+path {
+    fill: #d3f9d9;
+    stroke: rgb(49, 49, 49);
+    stroke-width: 0.25;
 }
 
 path:hover {
     fill: black;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 2200px) {
-    .svg1 {
-        display: block;
-    }
-
-    .svg2 {
-        display: none;
+    svg {
+       height: 720px;
     }
 }
