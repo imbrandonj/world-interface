@@ -25,7 +25,7 @@
 .countryInfo h2 {
     font-weight: 400;
     font-size: 2em;
-    padding-left: 1em;
+    letter-spacing: 0.15rem;
 }
 
 .mapContainer {
@@ -44,7 +44,20 @@ path:hover {
 }
 
 @media screen and (min-width: 2200px) {
+
+    .countryInfo {
+        padding-left: 15rem;
+    }
+    .countryInfo li {
+        padding: 1.25rem 0;
+        font-size: 1.45em;
+    }
+    
+    .countryInfo h2 {
+        font-size: 2em;
+    }
+
     svg {
-       height: 720px;
+       height: 800px;
     }
 }
