@@ -1,3 +1,37 @@
+
+.mapInfoBundle {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.countryInfo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    padding-left: 10rem;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    color: ghostwhite;
+}
+
+.countryInfo li {
+    list-style: none;
+    padding: 1rem 0;
+    font-size: 1.25em;
+}
+
+.countryInfo h2 {
+    font-weight: 400;
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+.mapContainer {
+    width: 60%;
+}
+
 path {
     fill: #d3f9d9;
     stroke: rgb(49, 49, 49);

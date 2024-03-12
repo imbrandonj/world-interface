@@ -20,12 +20,22 @@ export class ApiService {
 
     // calling the api and setting the country info:
     this.fetchCountryInfo(country).subscribe((data: any) => {
+      try {
       subject.next({
         country: data[1][0].name,
-        capital: data[1][0].capitalCity,
-        region: data[1][0].region.value,
-        income: data[1][0].incomeLevel.value,
-      })
+        capital: 'Capital: ' + data[1][0].capitalCity,
+        region: 'Region: ' + data[1][0].region.value,
+        income: 'Income: ' + data[1][0].incomeLevel.value,
+      })}
+
+      // api does not contain information:
+      catch (error) {
+        subject.next({
+        country: 'Country: Unknown',
+        capital: 'Capital: No Data',
+        region: 'Region: No Data',
+        income: 'Income: No Data',
+        })}
     })
 
     return subject.asObservable();

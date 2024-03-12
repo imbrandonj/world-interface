@@ -30,12 +30,6 @@ h1 span {
     gap: 5rem;
 }
 
-.mapInfoBundle {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
 
 footer {
     display: flex;
@@ -54,6 +48,7 @@ footer a:hover {
     transform: scaleX(-1);
 }
 
+
 @media screen and (min-width: 2200px) {
     .appWrap {
         margin-top: 3%;
@@ -64,7 +59,12 @@ footer a:hover {
         margin-bottom: 8rem;
       }
 
+    .countryInfo {
+        padding-left: 3em;
+    }
+
     footer img {
         height: 4rem;
     }
+
 }
