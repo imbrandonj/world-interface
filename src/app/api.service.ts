@@ -18,7 +18,7 @@ export class ApiService {
 
   // GeoNames API
   fetchGNCountryInfo(country: string) { // `country` arg is a 2 char country code
-    let api = `https://api.geonames.org/countryInfoJSON?country=${country}&username=imbrandonj`;
+    let api = `https://secure.geonames.org/countryInfoJSON?country=${country}&username=imbrandonj`;
 
     return this.http.get(api);
   }
