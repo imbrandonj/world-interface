@@ -49,16 +49,12 @@ footer a:hover {
 
 @media screen and (min-width: 2200px) {
     .appWrap {
-        padding: 6rem 3rem;
+        padding: 5rem 3rem;
     }
 
     header {
         margin-bottom: 7rem;
       }
-
-    .countryInfo {
-        padding-left: 3em;
-    }
 
     footer img {
         height: 4rem;
