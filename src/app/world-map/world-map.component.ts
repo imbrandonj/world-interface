@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ApiService } from '../api.service';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-world-map',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './world-map.component.html',
   styleUrl: './world-map.component.css'
 })

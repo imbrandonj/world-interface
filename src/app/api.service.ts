@@ -28,7 +28,7 @@ export class ApiService {
   setCountryInfo(country: string) {  // `country` arg is a 2 char country code
     let subject = new Subject();
 
-    // calling the GeoNames API to set country, capital, population:
+    // calling the GeoNames API to set country, capital, population, continent, and currency:
     this.fetchGNCountryInfo(country).subscribe((geoData: any) => {
 
       // calling the World Bank API to set region & income level:
@@ -44,8 +44,16 @@ export class ApiService {
         countryInfo.currency = 'Currency: ' + (geoData.geonames[0]?.currencyCode || 'No Data')
 
         // append the World Bank API data
-        countryInfo.region = 'Region: ' + wbData[1][0]?.region.value || 'No Data';
-        countryInfo.income = 'Income: ' + wbData[1][0]?.incomeLevel.value || 'No Data';
+        // certain countries do not contain data in the World Bank API, thus try/catch
+        try {
+          countryInfo.region = 'Region: ' + wbData[1][0].region.value;
+          countryInfo.income = 'Income: ' + wbData[1][0].incomeLevel.value;
+        }
+
+        catch (error) {
+          countryInfo.region = 'Region: ' + 'No Data';
+          countryInfo.income = 'Income: ' + 'No Data';
+        }
 
         subject.next(countryInfo);
         subject.complete();
